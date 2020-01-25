@@ -71,61 +71,6 @@ p {
     margin: 0 auto;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom-content {
-    display: flex;
-    flex-direction: row;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
 
 footer {
     width: 100%;
@@ -164,41 +109,34 @@ footer nav a {
     color: black;
 }
 
-.box1{
-    background-color: teal;
+.about-container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.about-container h2{
+    margin-top: 25px;
+}
+.about-container p{
+    border-bottom: 2px dotted black;
+    padding-bottom: 20px;
+    padding-left: 3px;
+    padding-top: 9px;
+    line-height: 1.4;
 }
 
-.box2{
-    background-color: gold;
-}
-.box3{
-    background-color:cadetblue; 
-}
-
-.box4{
-    background-color: coral;
+.about-container .section{
+    flex-basis:48%;
+    margin:10px 2px;
+    padding: 10px;
 
 }
 
-.box5{
-    background-color:crimson;
-}
-.box6{
-    background-color:forestgreen;
-}
-.box7{
-    background-color:darkorchid;
-
-}
-.box8{
-    background-color:hotpink;
-
-}
-.box9{
-    background-color:indigo;
-
-}
-.box10{
-    background-color:dodgerblue;
-
-}
+.about-container .section a{border: 1px solid black;
+border-radius: 5px;
+text-transform: capitalize;
+text-decoration: none;
+color: black;
+background-color: white;
+padding: 6px 30px;
+margin-top: 15px;}
